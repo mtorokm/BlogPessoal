@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import{ HttpClient, HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeedComponent } from './feed/feed.component';
 import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.component';
+import { LoginComponent } from './login/login.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.componen
     NavbarComponent,
     FooterComponent,
     FeedComponent,
-    PerfilLateralComponent
+    PerfilLateralComponent,
+    LoginComponent,
+    CadastroComponent,
+    HttpClient
   ],
   imports: [
     BrowserModule,
